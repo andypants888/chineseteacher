@@ -1,23 +1,84 @@
-head {
-	
+* {
+    box-sizing: border-box;
 }
 
+head {}
+
 body {
-	background-color: #000000;
-	font-family: Comic Sans MS, Arial;
+	margin:0;
+    padding: 0;
+    background-color: #000000;
+	font-family: "Sansita Swashed", Arial;
 	color:#fc4242 ;
 
 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.brand-title {
+    font-size: 4vw;
+    padding: 1vw;
+}
+
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2vw;
+    display: block;
+    font-size:3vw;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    display: none;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 5vw;
+    height: 4vw;
+    z-index: 3;
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2vw;
+    z-index: 3;
 }
 
 .video-container {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -999;
 }
 .video-container video {
     min-width: 100%;
@@ -28,12 +89,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -999;
 }
 
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none
+    }
+}
+/*
 .overlay {
-	position:absolute;
-	top:10;
+	position:relative;
+	top:100;
 	left:10;
 	z-index: 1.5;
 	overflow: hidden;
-}
+}*/

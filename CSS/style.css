@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 head {}
@@ -18,13 +19,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top:-0.5vw;
+    padding-left: 1vw;
 }
 
 .brand-title {
     font-size: 4vw;
-    padding: 1vw;
 }
 
 .navbar-links ul {
@@ -39,14 +41,14 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     padding: 2vw;
     display: block;
-    font-size:3vw;
+    font-size:2vw;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #555555;
 }
 
 .toggle-button {
@@ -56,17 +58,17 @@ body {
     display: none;
     flex-direction:column;
     justify-content: space-between;
-    width: 5vw;
-    height: 4vw;
+    width: 7vw;
+    height: 6vw;
     z-index: 3;
 
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 1vw;
     width: 100%;
-    background-color: #fff;
-    border-radius: 2vw;
+    background-color: #ffffff;
+    border-radius: 3vw;
     z-index: 3;
 }
 
@@ -97,9 +99,42 @@ body {
         display: flex;
     }
 
-    .navbar-links {
-        display: none
+    .brand-title{
+        font-size: 8vw;
     }
+
+    .navbar {
+        flex-direction: column;
+        /*maybe in future I can align all to right, for easier clicking*/
+/*        align-items: flex start; 
+*/
+    }
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width:100%;
+
+    }
+    .navbar-links li a {
+/*        display: none*/
+        font-size: 5vw;
+        text-align: center;   
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+
+
+
+
+
 }
 /*
 .overlay {

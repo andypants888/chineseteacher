@@ -13,6 +13,8 @@ body {
 	/*color:#fc4242 ;*/
 }
 
+/*Start of CSS for home.html*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -143,6 +145,11 @@ body {
     font-size: 1rem;
 }
 
+.overlay h2 {
+    margin: 0;
+    padding: 0;
+}
+
 .button-container{
     width:100%;
 }
@@ -157,7 +164,7 @@ body {
 }
 
 .button {
-    background-color: #ffffff;
+    background-color: orange;
     border: none;
     padding: 5vw;
     opacity: .8;
@@ -168,7 +175,12 @@ body {
     text-decoration: none;
     font-family: "Sansita Swashed", Arial, Helvetica;
     font-size: 6vw;
- }
+    color: #ff1100;
+    }
+
+.button a:visited {
+    color:#ff1100;
+}
 
 .footer {
     position: fixed;
@@ -190,3 +202,150 @@ body {
         font-size: 1.5vw;
     }
 }
+
+/*End of home.html*/
+
+/*Start of about.html*/
+
+.overlay-for-about {
+    padding: 5vw;
+    text-align: left;
+    /*text-justify: inter-character;*/
+    opacity: 1;
+    position:relative;
+    background: orange;
+    color: #ff1100;
+    z-index: 1.5;
+    overflow: hidden;
+    font-size: 1rem;
+    /*border-style: solid;*/
+}
+
+.overlay-for-about h2 {
+    margin: 0vw;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 60%;
+    float: left;
+    margin: 2vw;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    display: inline-flex;
+    margin: -4vw 1vw 1vw 1vw;
+    border-radius: 50%;
+}
+
+@media (min-width: 400px) {
+
+    .profile-pic {
+        width: 20%;
+    }
+
+    .logo {
+        width: 15%;
+        float: right;
+        display: initial;
+    }
+
+    .overlay-for-about h2 {
+        font-size: 4vw;
+    }
+
+    .overlay-for-about p {
+        width: 600px;
+        word-wrap: normal;
+    }
+}
+
+/*End of about.html*/
+
+/*Start of services.html*/
+
+.layer-for-services {
+    background-color: orange;
+    position: absolute;
+    /*display: inline-block;*/
+    top: 5%;
+    margin:5%;
+    width: 90%;
+    height: 70%;
+    z-index: -50;
+    opacity: .9;
+   
+}
+
+.overlay-for-services {
+    text-align: left;
+    color: #ff1100;
+}
+
+.overlay-for-services h1 {
+    text-align: center;
+}
+
+.overlay-for-services h3 {
+    margin-left: 10%;
+}
+
+@media (min-width: 400px) {
+
+    .overlay-for-services h1 {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 4vw;
+}
+    .overlay-for-services h3 {
+        font-size: 2vw;
+    }
+
+    .overlay-for-services li {
+        margin-left: 10%;
+        font-size: 1.7vw;
+    }
+
+
+}
+/*End of services.html*/
+
+/*Start of contact.html*/
+.layer-for-contact {
+    background-color: orange;
+    position: absolute;
+    /*display: inline-block;*/
+    top: 5%;
+    margin:5%;
+    width: 90%;
+    height: 70%;
+    z-index: -50;
+    opacity: .9;
+   
+}
+
+.overlay-for-contact {
+    text-align: left;
+    color: #ff1100;
+}
+
+.overlay-for-contact h1 {
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    .overlay-for-contact h1 {
+        font-size: 4vw;
+    } 
+    .overlay-for-contact li {
+        margin-left: 10%;
+        font-size: 2vw;
+    }
+
+}
+
+/*End of contact.html*/

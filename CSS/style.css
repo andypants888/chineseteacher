@@ -246,7 +246,7 @@ body {
 
 .logo {
     width: 30%;
-    float: left;
+    float: none;
     display: inline-flex;
     margin: -4vw 1vw 1vw 1vw;
     border-radius: 50%;
